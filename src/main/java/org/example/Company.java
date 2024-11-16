@@ -1,5 +1,7 @@
 package org.example;
 
+import java.util.Arrays;
+
 public class Company {
     private int id;
     private String name;
@@ -53,4 +55,13 @@ public class Company {
         }
     }
 
+    @Override
+    public String toString() {
+        return "Company{" +
+                "id=" + id +
+                ", name='" + name + '\'' +
+                ", giro=" + giro +
+                ", developerNames=" + Arrays.toString(developerNames) +
+                '}';
+    }
 }

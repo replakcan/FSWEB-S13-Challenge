@@ -18,4 +18,12 @@ public enum Plan {
         this.name = name;
         this. price = price;
     }
+
+    @Override
+    public String toString() {
+        return "Plan{" +
+                "name='" + name + '\'' +
+                ", price=" + price +
+                '}';
+    }
 }
