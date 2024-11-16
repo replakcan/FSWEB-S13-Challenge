@@ -37,4 +37,14 @@ public class Company {
     public void setDeveloperNames(String[] developerNames) {
         this.developerNames = developerNames;
     }
+
+    public Company(String[] developerNames, double giro, String name, int id) {
+        this.developerNames = developerNames;
+        this.giro = Math.max(giro, 0.0);
+        this.name = name;
+        this.id = id;
+    }
+
+
+
 }
