@@ -45,6 +45,12 @@ public class Company {
         this.id = id;
     }
 
-
+    public void addCompany(int index, String name) {
+        if (this.developerNames[index] != null){
+            System.out.println(index + " dolu gardas siraya gir");
+        } else {
+            this.developerNames[index] = name;
+        }
+    }
 
 }
