@@ -1,29 +1,23 @@
 package org.example.enums;
 
 public enum Plan {
-    BASIC("Alper", 60);
+    BASIC("Basic Plan", 100),
+    PREMIUM("Premium Plan", 200),
+    ENTERPRISE("Enterprise Plan", 300);
 
-    private String name;
-    private int price;
+    private final String name;
+    private final Integer price;
+
+    Plan(String name, Integer price) {
+        this.name = name;
+        this.price = price;
+    }
 
     public String getName() {
         return name;
     }
 
-    public int getPrice() {
+    public Integer getPrice() {
         return price;
-    }
-
-    Plan(String name, int price){
-        this.name = name;
-        this. price = price;
-    }
-
-    @Override
-    public String toString() {
-        return "Plan{" +
-                "name='" + name + '\'' +
-                ", price=" + price +
-                '}';
     }
 }
